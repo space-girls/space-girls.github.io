@@ -8,22 +8,22 @@ endif
 # The following can be configured in config
 BLOG_DATE_FORMAT_INDEX ?= %x
 BLOG_DATE_FORMAT ?= %x %X
-BLOG_TITLE ?= trevcan's blog
-BLOG_DESCRIPTION ?= the blog by trevcan
+BLOG_TITLE ?= space.girls.1288's blog
+BLOG_DESCRIPTION ?= the blog by spacegirls
 BLOG_URL_ROOT ?= blog
 BLOG_FEED_MAX ?= 1000
 BLOG_FEEDS ?= rss atom
 BLOG_SRC ?= articles
 
 
-BLOG_WEBSITE_SHELL_USER ?= trevcan
-BLOG_WEBSITE_SHELL_HOST ?= internets
-BLOG_WEBSITE_SHELL_PATH ?= /random/yourpath
-BLOG_WEBSITE_SHELL_PROMPT ?= $(BLOG_WEBSITE_SHELL_USER)@$(BLOG_WEBSITE_SHELL_HOST) $(BLOG_WEBSITE_SHELL_PATH)
+BLOG_WEBSITE_SHELL_USER ?= girls
+BLOG_WEBSITE_SHELL_HOST ?= space
+BLOG_WEBSITE_SHELL_PATH ?=  
+BLOG_WEBSITE_SHELL_PROMPT ?= $(BLOG_WEBSITE_SHELL_USER) @ $(BLOG_WEBSITE_SHELL_HOST) $(BLOG_WEBSITE_SHELL_PATH)
 BLOG_WEBSITE_NAME ?= $(BLOG_WEBSITE_SHELL_PROMPT) $
 
-BLOG_AUTHOR_ALIAS ?= trevcan
-BLOG_AUTHOR ?= Hector Canizales
+BLOG_AUTHOR_ALIAS ?= space girls
+BLOG_AUTHOR ?= space girls
 BLOG_REDIRECT_TARGET ?= 
 BLOG_REDIRECT_TIME ?= 3
 
@@ -182,7 +182,7 @@ blog/rss.xml: $(ARTICLES)
 	done | sort -k2nr | head -n $(BLOG_FEED_MAX) | cut -d" " -f1,3- | while IFS=" " read -r FILE DATE; do \
 		printf '<item>\n<title>%s</title>\n<link>%s</link>\n<guid>%s</guid>\n<pubDate>%s</pubDate>\n<description>%s</description>\n</item>\n' \
 			"`head -n 1 $$FILE`" \
-			"https://trevcan.duckdns.org/blog/`basename $$FILE .md`.html" \
+			"https://thetrevor.tech/space-girls/`basename $$FILE .md`.html" \
 			"`basename $$FILE .md`.html" \
 			"$$DATE" \
 			"$(cat $$FILE | sed 's/&/and/g | tr -d '\n')"; \
