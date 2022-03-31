@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<meta charset=utf-8 lang=es >
+	<title>
+		Cuenta de correo empleado.
+	</title>
+	<head align=center>
+
+	<link rel=stylesheet href=main.css>
+	<script src=main.js></script>
+	<a href=index.html>	<h1>
+		Obtener cuenta de correo empleado
+	</h1>
+	</a>
+
+	</head>
+
+	<div class=container >
+		<form name=forma_datos >
+			<table>
+				<tr>
+					<td>
+						<p >Nombre de persona</p>
+					</td>
+					<td>
+						<p>
+						<input name=input_persona_nombre>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Apellido paterno de persona</p>
+					</td>
+
+					<td>
+						<p>
+						<input name=input_apellido_paterno >
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Apellido materno de persona</p>
+					</td>
+
+					<td>
+						<p>
+						<input name=input_apellido_materno >
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Fecha de nacimiento de persona</p>
+					</td>
+
+					<td>
+						<p>
+						<input name=input_nacio type=date >
+						</p>
+					</td>
+				</tr>
+
+				<br>
+
+				<tr>
+					<td>
+						<p>Cuenta de correo resultante</p>
+					</td>
+
+					<td>
+						<p>
+						<input name=output_correo readonly=true >
+						</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p>Contraseña resultante</p>
+					</td>
+
+					<td>
+						<p>
+						<input name=output_password readonly=true >
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type=button onclick=generarCuenta() value="Generar Cuenta" ></input>
+					</td>
+
+					<td>
+						<p>
+						<button onclick=borrarDatos()> Borrar datos. </button>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+		</form>
+
+	</div>
+
+</html>

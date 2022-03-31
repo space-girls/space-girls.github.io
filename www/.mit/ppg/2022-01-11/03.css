@@ -1,0 +1,16 @@
+p {
+	font-size: 13pt;
+	color: yellow;
+}
+
+.title23 {
+	font-size: 23pt;
+	background: grey;
+	color: black;
+	width: 70%;
+	border-radius: 10pt;
+
+	font-weight: bold;
+	font-family: "monospace";
+
+}

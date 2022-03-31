@@ -1,0 +1,50 @@
+.h1{
+	color: grey;
+	font-size: 27pt;
+	//font-weight: bold;
+	font-family: arial;
+	//background: #000000;
+}
+
+.h2{
+	color: #1addad;
+	font-size: 33pt;
+	font-weight: bold;
+	font-family: arial;
+	background: #000000;
+}
+
+.boton_01{
+	color: #3df221;
+	font-size: 33pt;
+	font-weight: bold;
+	font-family: arial;
+	background: #000000;
+}
+
+.boton_01:hover{
+	color: #f23a21;
+	font-size: 33pt;
+	font-weight: bold;
+	font-family: arial;
+	background: #ffffff;
+}
+
+
+.tabla{
+	background: #131c10;
+	width: 80%;
+	color: #f22175;
+	font-size: 12pt;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-weight: bold;
+	background-color: black;
+	color: #dd1c70;
+	text-align: center;
+}
