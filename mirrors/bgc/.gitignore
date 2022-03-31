@@ -1,0 +1,23 @@
+# vim swap files
+
+.*.sw[op]
+
+# Build products
+
+stage/
+src/bgc.html
+src/bgc-wide.html
+src/bg-css*.html
+src/bgc_*.pdf
+
+__pycache__
+
+# Misc
+
+foo
+foo.[ch]
+bar
+bar.[ch]
+baz
+baz.[ch]
+.vscode/*

@@ -1,0 +1,13 @@
+# vim swap files
+
+.*.sw[op]
+
+# Build products
+
+stage/
+src/bgnet.html
+src/bgnet-wide.html
+src/bg-css-wide.html
+src/bgnet_*.pdf
+
+__pycache__

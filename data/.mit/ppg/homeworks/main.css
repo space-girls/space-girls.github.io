@@ -1,0 +1,15 @@
+body {
+
+	width: 70%; 
+
+	text-align: center;
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  width: 70%;
+  background-color: grey;
+  color: white;
+}
